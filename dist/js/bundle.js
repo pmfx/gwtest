@@ -1350,7 +1350,7 @@
     $('.js-addsite-add-entry').click(function() {
       
       $('#add_site_domains_list').append(tpl_domainEntry);
-      $('#add_site_domains_list .m-add-domains__entry:last-child .form-control').first().focus();
+      $('#add_site_domains_list .m-domains__entry:last-child .form-control').first().focus();
       $('#add_site_domains .panel-footer').show();
       
       $('#add_site_domains_list select').selectric();
@@ -1358,7 +1358,7 @@
       // add a site: domains remove
       
       $('.js-addsite-remove-entry').click(function() {
-        $(this).closest('.m-add-domains__entry').remove();
+        $(this).closest('.m-domains__entry').remove();
       });
       
     });

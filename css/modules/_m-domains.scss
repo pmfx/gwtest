@@ -47,12 +47,12 @@
 
 }
 
-.m-add-domains__entry,
-.m-add-domains__add {
+.m-domains__entry,
+.m-domains__add {
   padding: 15px;
 }
 
-.m-add-domains__add {
+.m-domains__add {
   .btn {
     .icon-plus {
       margin-right: 5px;
@@ -61,19 +61,19 @@
   }
 }
 
-.m-add-domains__entry {
+.m-domains__entry {
   padding-bottom: 0;
   border-bottom: 1px solid #f0f0f0;
 }
 
-.m-add-domains__entry-remove {
+.m-domains__entry-remove {
   text-align: right;
   @media (max-width: $breakpoint_sm_max) {
     text-align: center;
   }
 }
 
-.m-add-domains__entry-remove-button {
+.m-domains__entry-remove-button {
   display: inline-block;
   padding-top: 4px;
   padding-bottom: 4px;

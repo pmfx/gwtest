@@ -1,0 +1,5 @@
+.gitattributes export-ignore
+.gitignore     export-ignore
+.brackets.json     export-ignore
+yarn.lock     export-ignore
+/design/ export-ignore

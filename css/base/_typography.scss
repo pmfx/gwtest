@@ -1,0 +1,45 @@
+$font_family_base: 'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: $base_rem;
+  font-weight: 400;
+}
+
+/* icomoon fix */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: $font_family_base;
+  font-size: $base_font_size_xs;
+  color: $text_color;
+  @media (min-width: $breakpoint_sm) {
+    font-size: $base_font_size;
+  }
+}
+
+::-moz-selection {
+  color: #fff;
+  background: $color_blue;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: $color_blue;
+  text-shadow: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}

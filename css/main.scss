@@ -1,0 +1,47 @@
+/*
+* Theme Name: GWT
+* Description: Grey Wizard Test
+* Author: Piotr Matysiak (pmfx)
+* Author URI: 
+* http://webready.pl
+* http://pm-fx.com
+* https://github.com/pmfx
+*/
+
+// bootstrap
+@import '../bootstrap/dist/forSass/bootstrap';
+
+// variables
+@import 'vars/vars-base';
+
+// mixins
+@import 'mixins/mixins-base';
+
+// vendor
+@import 'vendor/icomoon';
+@import 'vendor/selectric';
+
+// addons
+@import 'addons/bootstrap-gutters';
+
+// base
+@import 'base/typography';
+@import 'base/common';
+@import 'base/buttons';
+@import 'base/dropdown';
+@import 'base/forms';
+@import 'base/panel';
+
+// components
+@import 'components/c-navbar';
+@import 'components/c-pageheader';
+@import 'components/c-sectiontitle';
+@import 'components/c-radio-option';
+@import 'components/c-package';
+
+// modules
+@import 'modules/m-domains';
+
+// helpers
+@import 'utilities/u-helpers';
+@import 'utilities/u-print';

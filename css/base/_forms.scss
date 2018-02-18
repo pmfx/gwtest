@@ -1,0 +1,69 @@
+label {
+  font-size: 12px;
+  font-weight: normal;
+  color: #8a8a8a;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  height: 40px;
+  padding: 9px 12px;
+  border-radius: 0;
+  border-color: #f3f3f3;
+  border-bottom-color: #c3c3c3;
+  box-shadow: none;
+  &:focus {
+    border-color: #f3f3f3;
+    border-bottom-color: #c3c3c3;
+    background-color: #fbfbfb;
+    box-shadow: none;
+  }
+}
+
+/* validation states */
+
+.has-success {
+  .form-control {
+    position: relative;
+    padding-right: 30px;
+    box-shadow: none;
+    &:focus {
+      border-color: #f3f3f3;
+      border-bottom-color: #c3c3c3;
+      background-color: #fbfbfb;
+      box-shadow: none;
+    }
+  }
+  &:after {
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    top: 0;
+    right: 10px;
+    font-family: 'gwicons' !important;
+    font-size: 14px;
+    content: "\ea10";
+    color: $color_green;
+  }
+}
+
+/* combined label and control */
+
+.form-group--combined,
+.form-group--combined.has-success {
+  border: 1px solid #f3f3f3;
+  border-bottom-color: #c3c3c3;
+
+  label {
+    margin-top: 7px;
+    padding-left: 10px;
+  }
+
+  .form-control {
+    border-color: transparent;
+  }
+}

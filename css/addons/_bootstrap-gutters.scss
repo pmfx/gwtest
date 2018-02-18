@@ -1,0 +1,31 @@
+/* change gutters size if needed */
+.gutters-0 > .row,
+.form-horizontal .gutters-0 > .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.gutters-0 > .row >[class*="col-"],
+.form-horizontal .gutters-0 > .form-group >[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.gutters-xs > .row,
+.form-horizontal .gutters-xs > .form-group {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.gutters-xs > .row >[class*="col-"],
+.form-horizontal .gutters-xs > .form-group >[class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.gutters-sm > .row,
+.form-horizontal .gutters-sm > .form-group {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.gutters-sm > .row >[class*="col-"],
+.form-horizontal .gutters-sm > .form-group >[class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}

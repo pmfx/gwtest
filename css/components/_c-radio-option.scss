@@ -1,0 +1,49 @@
+.c-radio-option {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color_blue_dark;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 7px;
+  }
+  &:before {
+    width : 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+  }
+  &:after {
+    top: 5px;
+    left: 12px;
+    width : 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+
+.c-radio-option--big {
+  font-size: 22px;
+  &:before {
+    top: 3px;
+  }
+  &:after {
+    top: 8px;
+  }
+}
+
+.active {
+  .c-radio-option {
+    &:after {
+      background-color: $color_blue;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.m-domains {
+
+  .panel-heading {
+    @media (max-width: $breakpoint_sm_max) {
+      display: none;
+    }
+  }
+  
+  .panel-body {
+    padding: 0;
+  }
+  
+  .panel-footer {
+    display: none;
+  }
+
+  .form-group {
+    label {
+      @media (min-width: $breakpoint_md) {
+        display: none;
+      }
+    }
+  }
+  
+  .form-group--ssl {
+    position: relative;
+    width: calc(100% - 45px);
+    &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: -45px;
+      width: 45px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-family: 'gwicons' !important;
+      font-size: 22px;
+      content: "\f09c";
+      color: #d4d4d4;
+      @media (max-width: $breakpoint_sm_max) {
+        height: 70px;
+        line-height: 65px;
+      }
+    }
+  }
+
+}
+
+.m-add-domains__entry,
+.m-add-domains__add {
+  padding: 15px;
+}
+
+.m-add-domains__add {
+  .btn {
+    .icon-plus {
+      margin-right: 5px;
+      font-size: 10px;
+    }
+  }
+}
+
+.m-add-domains__entry {
+  padding-bottom: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.m-add-domains__entry-remove {
+  text-align: right;
+  @media (max-width: $breakpoint_sm_max) {
+    text-align: center;
+  }
+}
+
+.m-add-domains__entry-remove-button {
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-width: 0;
+  border-color: transparent;
+  border-left: 1px solid #f1f1f1;
+  font-size: 22px;
+  background-color: transparent;
+  color: $color_primary;
+  @media (max-width: $breakpoint_sm_max) {
+    padding-bottom: 15px;
+    border-width: 0;
+  }
+  &:hover {
+    color: $color_red;
+  }
+  &:active {
+    transform: translateY(1px);
+    color: $color_primary;
+  }
+}

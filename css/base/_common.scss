@@ -1,0 +1,27 @@
+/* body */
+
+body {
+  position: relative;
+  padding-top: $navbar_height;
+  background-color: $page_background_color;
+}
+
+/* containers */
+
+.container {
+  position: relative;
+}
+
+/* transitions */
+
+.c-navbar,
+.c-radio-option,
+.c-radio-option:before,
+.c-radio-option:after,
+.panel-heading {
+  @include transition(0.3s);
+}
+
+.btn {
+  @include transition(0.1s);
+}

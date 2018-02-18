@@ -1,0 +1,47 @@
+// rem value used to calculate other rems
+// so 2rem will mean 20px
+$base_rem          : 10px;
+$base_font_size    : 16px;
+$base_font_size_xs : 14px;
+
+// breakpoints
+$breakpoint_xs_max : 575px;
+$breakpoint_ms     : 576px;
+$breakpoint_ms_max : 767px;
+$breakpoint_sm     : 768px;
+$breakpoint_sm_max : 991px;
+$breakpoint_md     : 992px;
+$breakpoint_md_max : 1199px;
+$breakpoint_lg     : 1200px;
+$breakpoint_lg_max : 1519px;
+$breakpoint_xl     : 1520px;
+
+// base colors
+$color_white          : #fff;
+$color_black          : #000;
+$color_blue           : #5c7386;
+$color_blue_dark      : #4a5f73;
+$color_orange         : #f39d34;
+$color_gray           : #f7f7f7;
+$color_gray_light     : #fafafa;
+$color_gray_dark      : #515151;
+$color_gray_semi_dark : #777;
+$color_green          : #6cc071;
+$color_yellow         : #ffb81c;
+$color_red            : #d11415;
+
+$color_primary        : $color_blue_dark;
+$color_secondary      : $color_green;
+$color_default        : $color_gray;
+
+// background colors
+$page_background_color: #fafafa;
+
+// text colors
+$text_color: #515151;
+
+// links colors
+$link_color: $color_blue;
+$link_color_hover: $color_blue_dark;
+
+$navbar_height: 75px;

@@ -3,32 +3,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
   
   grunt.initConfig({
-
-    // bootstrap css
-    less: {
-      compileCore: {
-        options: {
-          strictMath: true,
-          sourceMap: false,
-          outputSourceFiles: true,
-          sourceMapURL: 'bootstrap.css.map',
-          sourceMapFilename: 'dist/css/bootstrap.css.map'
-        },
-        src: 'bootstrap/less/bootstrap.less',
-        dest: 'bootstrap/dist/forSass/_bootstrap.scss'
-      },
-      compileTheme: {
-        options: {
-          strictMath: true,
-          sourceMap: false,
-          outputSourceFiles: true,
-          sourceMapURL: 'bootstrap-theme.css.map',
-          sourceMapFilename: 'dist/css/bootstrap-theme.css.map'
-        },
-        src: 'bootstrap/less/theme.less',
-        dest: 'bootstrap/dist/forSass/_bootstrap-theme.scss'
-      }
-    },
     
     // project css
     sass: {
@@ -47,9 +21,9 @@ module.exports = function(grunt) {
     concat: {
       js: {
         src: [
-          'bootstrap/js/transition.js',
-          'bootstrap/js/collapse.js',
-          'bootstrap/js/dropdown.js',
+          'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+          'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+          'node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
           'js/vendor/modernizr-custom.js',
           'js/vendor/selectric.js',
           'js/app/app.js',
@@ -75,9 +49,9 @@ module.exports = function(grunt) {
            flatten: true,
            filter: 'isFile',
            src: [
-             'bootstrap/js/transition.js',
-             'bootstrap/js/collapse.js',
-             'bootstrap/js/dropdown.js'
+             'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+             'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+             'node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js'
            ], 
            dest: 'dist/js/vendor/bootstrap'}
         ],
@@ -120,10 +94,6 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      bootstrap: {
-        files: ['bootstrap/less/bootstrap.less'],
-        tasks: ['clean:css','less:compileCore','sass'],
-      },
       css: {
         files: ['css/**/*.css','css/**/*.scss'],
         tasks: ['clean:css','sass'],
@@ -144,8 +114,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   
   // registerTask
-  grunt.registerTask('default', ['clean:js','clean:css','concat','uglify','less:compileCore','sass']);
-  grunt.registerTask('watcher', ['clean:js','clean:css','concat','uglify','less:compileCore','sass','watch']);
+  grunt.registerTask('default', ['clean:js','clean:css','concat','uglify','sass']);
+  grunt.registerTask('watcher', ['clean:js','clean:css','concat','uglify','sass','watch']);
   //grunt.registerTask('default', ['clean:js','clean:css','copy:bootstrap','copy:vendor','copy:app','concat','uglify','less:compileCore','sass']);
   //grunt.registerTask('watcher', ['clean:js','clean:css','copy:bootstrap','copy:vendor','copy:app','concat','uglify','less:compileCore','sass','watch']);
   

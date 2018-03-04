@@ -1,6 +1,6 @@
 {
   "name": "GreyWizardTest",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GreyWizard Test Project",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",

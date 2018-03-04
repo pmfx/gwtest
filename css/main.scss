@@ -8,11 +8,14 @@
 * https://github.com/pmfx
 */
 
-// bootstrap
-@import '../bootstrap/dist/forSass/bootstrap';
-
 // variables
 @import 'vars/vars-base';
+
+// bootstrap components
+@import 'bootstrap/bootstrap';
+
+// bootstrap addons
+@import 'bootstrap/addons/bootstrap-gutters';
 
 // mixins
 @import 'mixins/mixins-base';
@@ -20,9 +23,6 @@
 // vendor
 @import 'vendor/icomoon';
 @import 'vendor/selectric';
-
-// addons
-@import 'addons/bootstrap-gutters';
 
 // base
 @import 'base/typography';
